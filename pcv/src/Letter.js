@@ -1,0 +1,60 @@
+import {useState} from 'react';
+import peek from './assets/images/peekaboo.gif'
+import './assets/scss/cover-letter.scss'
+import * as React from 'react';
+function Letter(){
+    const [peekOut, setPeekOut] = useState(false);
+    function imageOut(){
+        setPeekOut(true);
+
+        setTimeout(() => {
+            setPeekOut(false);
+        }, 5000)
+    }
+    return (
+        <div className="container" >
+            <h1 className="title-header">
+                Dear Pinterest: 
+            </h1>
+            <img src = {peek} className= {peekOut ? 'peekaboo' : 'peekaboo-hidden'}/>
+            <div className="container-letter">
+                <p className ="letter-paragraph">
+                    For as long as I remember, Pinterest has been my favorite social media platform to use. 
+                    While others flocked to Instagram or swore by Tumblr I've always been a Pinterest girl deep down. 
+                    Pinterest is <b>the</b> go-to platform for inspiration, no one does it like you guys. Anytime I'm
+                    looking for something new to try or narrowing down an idea, I open your app and browse for hours (not literally...
+                    <p className="letter-paragraph-small">okay sometimes</p> ). The point is, I'm passionate about your product and would love 
+                    the opportunity to work on something I've used so much in my life. With "pins" being such a huge
+                    part of your product, I hope you don't mind if I include a few of my own to showcase my personality. 
+                    Hopefully it'll give a quick  <button className="button-link" onClick = {imageOut}>peek</button> 
+                    into who I am.
+                    <br />
+                    <br />
+                    Let me talk about my background really quickly. During my time earning a B.S in Creative Technology & Design
+                    from University of Colorado Boulder, I've learned to love and appreciate the intersection between creativity 
+                    and technology and I've always dreamed of working for a company who specializes in the intersection. 
+                    This relationship is something that I feel is still severly underappreciated, but Pinterest has been way ahead 
+                    of the game and I'd love to bring my own understanding and skillset to your company. You can bet that when I saw the
+                    New Grad position on your Careers page, I "jumped" on it! As far as what I bring to the table, Creative Technology &
+                    Design has provided me with a multitude of skills to use at my disposal. However, what I specialize in is front-end
+                    development. Throughout personal studies, jobs, and school I've built multiple applications and websites in trusty
+                    React, gone back to my roots with good old HTML/CSS/Javascript and created mobile apps from the ground up in Xcode and
+                    Android Studio. But if there's anything that my major has given me throughout the 4 years, it's the ability to adjust to new
+                    environments and learn new skills on the fly. 
+                    <br />
+                    <br />
+                    Pinterest is a company that continues to exceed expectations and improve on their product each day, and being able to
+                    be work on that would truly put my skills to the test. Just as I've been inspired by some of the things I've seen 
+                    on Pinterest, I'd love to be a part of a team who's constantly inspiring millions across the world. I'm excited to see
+                    how you guys are going to grow in the future.
+                    <br />
+                    <br />
+                    Best regards,
+                    <br />
+                    Kaitlyn Huynh
+                </p>
+            </div>
+        </div>
+    );
+}
+export default Letter;
