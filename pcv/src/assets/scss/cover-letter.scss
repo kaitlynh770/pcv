@@ -1,5 +1,8 @@
 @import url("https://use.typekit.net/tir8gnz.css");
- h1{
+body{
+    overflow-x: hidden; 
+} 
+h1{
     margin: 0.2em;
  }
  .container{
@@ -31,11 +34,12 @@
     margin: 0.5em;
     font-size: 0.8em;
     color: #767676;
+    margin-bottom: 3em;
 }
 .click-me {
     box-sizing: border-box;
     border-radius: 24px;
-    margin: 0.4em;
+    margin: 1em 0.4em;
     font-weight: bold;
     background-color: #efefef;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -43,6 +47,8 @@
     border: none;
     padding: 1em;
     cursor: pointer;
+    color: black;
+    text-decoration: none;
 }
 .click-me:hover{
     background-color: #d1d1d1;
@@ -56,7 +62,7 @@
     background-color: white;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     cursor: pointer;
-    margin: 2em;
+    margin: 1.5em;
     font-size: 1.2em;
 }
 .change-view-selected {
