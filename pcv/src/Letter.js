@@ -9,14 +9,20 @@ function Letter(){
 
         setTimeout(() => {
             setPeekOut(false);
-        }, 5000)
+        }, 4800)
     }
     return (
         <div className="container" >
             <h1 className="title-header">
                 Dear Pinterest: 
             </h1>
-            <img src = {peek} className= {peekOut ? 'peekaboo' : 'peekaboo-hidden'}/>
+            <img src = {peek}
+            style = 
+            {{
+                right: peekOut ? '-20px' : '-350px',
+                position: peekOut? 'absolute' : 'absolute',
+                animation: peekOut ? 'slide-in-right 4800ms ease-in-out': 'none'
+            }}/>
             <div className="container-letter">
                 <p className ="letter-paragraph">
                     For as long as I remember, Pinterest has been my favorite social media platform to use. 
@@ -24,7 +30,7 @@ function Letter(){
                     Pinterest is <b>the</b> go-to platform for inspiration, no one does it like you guys. Anytime I'm
                     looking for something new to try or narrowing down an idea, I open your app and browse for hours (not literally...
                     <p className="letter-paragraph-small">okay sometimes</p> ). The point is, I'm passionate about your product and would love 
-                    the opportunity to work on something I've used so much in my life. With "pins" being such a huge
+                    the opportunity to work on something I've used so much in my life. With <button className = "button-link">pins</button> being such a huge
                     part of your product, I hope you don't mind if I include a few of my own to showcase my personality. 
                     Hopefully it'll give a quick  <button className="button-link" onClick = {imageOut}>peek</button> 
                     into who I am.
