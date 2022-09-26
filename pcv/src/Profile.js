@@ -6,9 +6,6 @@ import Letter from './Letter.js';
 import Cards from './Cards.js';
 
 function Profile() {
-    const handleClick = (e) =>  {
-        e.preventDefault();
-    }
     const [showLetter,setShowLetter] = useState(true);
     function changeButton(){
         if(showLetter){
