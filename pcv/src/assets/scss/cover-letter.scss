@@ -10,10 +10,27 @@
         text-align: left;
         margin: 3em 14em;
     }
+
+    .container-cards{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.card-image{
+    height: 400px;
+    width: 200px;
+    border-radius: 10% 0% 0%;
+    align-content: center;
 }
 .profile-image {
     border-radius: 70%;
     width: 240px;
+}
+.profile-image-card{
+    border-radius: 70%;
+    width: 50px;
+    align-self: left;
+    margin-left: -20%;
 }
 .profile-info {
     margin: 0.5em;
@@ -119,6 +136,40 @@
     align-content: center;
     justify-content: center;
     width: 10em;
+    padding: 1em;
+    overflow: hidden;
+    height:auto;
+}
+.card{
+    background-color:whitesmoke;
+    border-radius: 10%;
+    margin:2%;
+    box-sizing:border-box;
+    height: 550px;
+}
+.text-for-card{
+    font-family: moret, serif;
+
+    font-weight: 400;
+    
+    font-style: normal;
+
+    font-size: 1.5em;
+}
+.text-next-to-photo {
+    font-family: moret, serif;
+
+    font-weight: 300;
+    
+    font-style: normal;
+
+    font-size: 0.8em;
+    position: relative;
+    bottom: 20px;
+
+    text-align: left;
+    display: inline;
+    margin-left: 1em;
 }
   
 @keyframes slide-in-right {
