@@ -1,7 +1,13 @@
 import {useState} from 'react';
 import peek from './assets/images/peekaboo.gif'
+import pin from './assets/images/pin.gif'
+import watching from './assets/images/watching.gif';
+import breakWall from './assets/images/spongebob-wall.gif';
 import './assets/scss/cover-letter.scss'
 import * as React from 'react';
+import Tippy from '@tippy.js/react';
+import 'tippy.js/dist/tippy.css';
+import 'tippy.js/themes/light.css';
 function Letter(){
     const [peekOut, setPeekOut] = useState(false);
     function imageOut(){
@@ -19,7 +25,7 @@ function Letter(){
             <img src = {peek}
             style = 
             {{
-                right: peekOut ? '-20px' : '-350px',
+                right: peekOut ? '0px' : '-350px',
                 position: peekOut? 'absolute' : 'absolute',
                 animation: peekOut ? 'slide-in-right 4800ms ease-in-out': 'none'
             }}/>
@@ -30,9 +36,9 @@ function Letter(){
                     Pinterest is <b>the</b> go-to platform for inspiration, no one does it like you guys. Anytime I'm
                     looking for something new to try or narrowing down an idea, I open your app and browse for hours (not literally...
                     <p className="letter-paragraph-small">okay sometimes</p> ). The point is, I'm passionate about your product and would love 
-                    the opportunity to work on something I've used so much in my life. With <button className = "button-link">pins</button> being such a huge
+                    the opportunity to work on something I've used so much in my life. With <Tippy theme={"light"} content = {<img className = "tippy-image" src = {pin} />} ><button className ='button-link'>pins</button></Tippy> being such a huge
                     part of your product, I hope you don't mind if I include a few of my own to showcase my personality. 
-                    Hopefully it'll give a quick  <button className="button-link" onClick = {imageOut}>peek</button> 
+                    Hopefully it'll give a quick  <button id = "pin" className="button-link" onClick = {imageOut}>peek</button> 
                     into who I am.
                     <br />
                     <br />
@@ -40,8 +46,8 @@ function Letter(){
                     from University of Colorado Boulder, I've learned to love and appreciate the intersection between creativity 
                     and technology and I've always dreamed of working for a company who specializes in the intersection. 
                     This relationship is something that I feel is still severly underappreciated, but Pinterest has been way ahead 
-                    of the game and I'd love to bring my own understanding and skillset to your company. You can bet that when I saw the
-                    New Grad position on your Careers page, I "jumped" on it! As far as what I bring to the table, Creative Technology &
+                    of the game and I'd love to bring my own understanding and skillset to your company. I've been <Tippy theme = {"light"} content = {<img className = "tippy-image" style = {{width: '20em',}} src = {watching} />} ><button className = 'button-link'>stalking</button></Tippy> the careers page for a bit. When the New Grad position popped up on
+                    Careers page, I've never clicked on something <Tippy theme = {"light"} content = {<img className = "tippy-image" style = {{width: '20em',}} src = {breakWall} />} ><button className = 'button-link'>faster</button></Tippy> in my life. As far as what I bring to the table, Creative Technology &
                     Design has provided me with a multitude of skills to use at my disposal. However, what I specialize in is front-end
                     development. Throughout personal studies, jobs, and school I've built multiple applications and websites in trusty
                     React, gone back to my roots with good old HTML/CSS/Javascript and created mobile apps from the ground up in Xcode and
