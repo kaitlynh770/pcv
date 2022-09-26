@@ -58,7 +58,7 @@ function Letter(){
                     React, gone back to my roots with good old HTML/CSS/Javascript and created mobile apps from the ground up in Xcode and
                     Android Studio. But if there's anything that my major has given me throughout the 4 years, it's the ability to adjust to new
                     environments and learn new skills on the fly. 
-                    <br />
+                    <br />    
                     <br />
                     Pinterest is a company that continues to exceed expectations and improve on their product each day, and being able to
                     be work on that would truly put my skills to the test. Just as I've been inspired by some of the things I've seen 
