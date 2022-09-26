@@ -14,6 +14,7 @@
     .container-cards{
         display: flex;
         justify-content: space-around;
+        align-items: center;
     }
 }
 .card-image{
@@ -25,12 +26,6 @@
 .profile-image {
     border-radius: 70%;
     width: 240px;
-}
-.profile-image-card{
-    border-radius: 70%;
-    width: 50px;
-    align-self: left;
-    margin-left: -20%;
 }
 .profile-info {
     margin: 0.5em;
@@ -146,6 +141,45 @@
     margin:2%;
     box-sizing:border-box;
     height: 550px;
+    width: fit-content;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.card-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border:none;
+}
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+.card-front, .card-back {
+    border: none;
+    margin:2%;
+    background-color:whitesmoke;
+    border-radius: 10%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+.card-front {
+    background-color: whitesmoke;
+    border: none;
+}
+.card-back{
+    background-color: whitesmoke;
+    transform: (rotateY(180deg));
+    border-radius: 10%;
+    margin:2%;
+    box-sizing:border-box;
+    margin-top: -100%;
+}
+.profile-image-card{
+    border-radius: 70%;
+    width: 50px;
+    align-self: left;
+    margin-left: -35%;
 }
 .text-for-card{
     font-family: moret, serif;
@@ -157,7 +191,7 @@
     font-size: 1.5em;
 }
 .text-next-to-photo {
-    font-family: moret, serif;
+    font-family: calmetta, sans-serif;
 
     font-weight: 300;
     
