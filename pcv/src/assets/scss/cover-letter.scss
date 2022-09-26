@@ -107,6 +107,7 @@
     position: absolute;
     align-items: right;
     right: 0px;
+
 }
 .peekaboo-hidden{
     position: absolute;
@@ -119,11 +120,11 @@
     }
 
     15% {
-        right: 2rem;
+        right: 0rem;
     }
 
     85% {
-        right: 2rem;
+        right: 0rem;
     }
 
     100% {
