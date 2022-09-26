@@ -171,9 +171,12 @@
     background-color: whitesmoke;
     transform: (rotateY(180deg));
     border-radius: 10%;
-    margin:2%;
+    margin: 2em;
     box-sizing:border-box;
     margin-top: -100%;
+    width: 350px;
+    align-items: flex-start;
+
 }
 .profile-image-card{
     border-radius: 70%;
@@ -204,6 +207,16 @@
     text-align: left;
     display: inline;
     margin-left: 1em;
+}
+.text-explanation{
+    font-family: calmetta, sans-serif;
+
+    font-weight: 300;
+    
+    font-style: normal;
+
+    font-size: 1.2em;
+    text-align: left;
 }
   
 @keyframes slide-in-right {
