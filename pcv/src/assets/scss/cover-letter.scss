@@ -99,14 +99,14 @@ h1{
     font-size: 1.2em;
     line-height: 1.6em;
 
-    .letter-paragraph-small{
-        font-family: calmetta, sans-serif;
-        font-weight: 300;
-        font-style: normal;
-        font-size: 0.6em;
-        line-height: 1.7em;
-        display: inline;
-    }
+}
+.letter-paragraph em{
+    font-family: calmetta, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.6em;
+    line-height: 1.7em;
+    display: inline;
 }
 .button-link{
     font-family: calmetta, sans-serif;
