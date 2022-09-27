@@ -11,7 +11,7 @@ function Profile() {
   }, [showLetter]);
   return (
     <div className="container">
-      <img className="profile-image" src={profile} alt="pinterest profile image"></img>
+      <img className="profile-image" src={profile} alt="pinterest profile cute bear"></img>
       <h1>kaitlyn huynh</h1>
       <p className="profile-info">@kaitlynhuynh8 · she/her</p>
       <a className="click-me" href="https://creative.colorado.edu/~kahu1074/web/portfolio/" rel="noopener noreferrer" target="_blank">
