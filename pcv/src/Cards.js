@@ -27,7 +27,7 @@ function Cards() {
         hard-working people is the type of environment I dream of being in. I'm looking for somewhere that can provide
         me the resources to improve myself not only as a coder, but as a person. I want to be passionate not only about
         the product, but the people who are using it. Just as I look at Pinterest for inspiration, I'd love to be in a
-        place whose creating outlets for it.
+        place that's creating outlets for it.
       </Card>
     </div>
   );

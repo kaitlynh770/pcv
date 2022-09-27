@@ -118,7 +118,7 @@ h1 {
   font-size: 1em;
   border: none;
   display: inline;
-  color: #f09090;
+  color: #E60023;
   text-decoration: underline;
   cursor: pointer;
   background-color: white;
@@ -132,6 +132,10 @@ h1 {
   padding: 1em;
   overflow: hidden;
   height: auto;
+}
+.github-image{
+    margin-top: none;
+    width: 1.5em;
 }
 .card {
   background-color: whitesmoke;

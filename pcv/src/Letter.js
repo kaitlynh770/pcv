@@ -7,6 +7,7 @@ import table from "./assets/images/table.gif";
 import css from "./assets/images/css.gif";
 import multi from "./assets/images/multi.gif";
 import excited from "./assets/images/patrick.gif";
+import github from "./assets/images/red-github.png"
 import * as React from "react";
 import Tippy from "@tippy.js/react";
 import "tippy.js/dist/tippy.css";
@@ -85,6 +86,9 @@ function Letter() {
           <br />
           Kaitlyn Huynh
         </p>
+        <a href = 'https://github.com/kaitlynh770/pcv'>
+            <img src = {github} className='github-image' />
+        </a>
       </div>
     </div>
   );
