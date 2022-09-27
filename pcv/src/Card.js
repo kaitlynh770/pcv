@@ -6,7 +6,7 @@ function Card({ cardImageSrc, title, children }) {
     <div className="card">
       <div className="card-inner">
         <div className="card-front">
-          <img className="card-image" src={cardImageSrc} style={{ width: "350px" }} />
+          <img className="card-image" src={cardImageSrc} />
           <p className="text-for-card">{title}</p>
           <img className="profile-image-card" src={profile} />
           <p className="text-next-to-photo">Uploaded by kaitlyn</p>

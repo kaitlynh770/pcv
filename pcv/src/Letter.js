@@ -7,25 +7,24 @@ import table from "./assets/images/table.gif";
 import css from "./assets/images/css.gif";
 import multi from "./assets/images/multi.gif";
 import excited from "./assets/images/patrick.gif";
-import github from "./assets/images/red-github.png"
+import github from "./assets/images/red-github.png";
 import * as React from "react";
 import Tippy from "@tippy.js/react";
 import "tippy.js/dist/tippy.css";
 import "tippy.js/themes/light.css";
 function Letter() {
   const [peekOut, setPeekOut] = useState(false);
-  // convert to useCallback
   const imageOut = useCallback(() => {
     setPeekOut(true);
 
     setTimeout(() => {
       setPeekOut(false);
     }, 4800);
-  }, [peekOut]);
+  }, []);
   return (
     <div className="container">
       <h1 className="title-header">Dear Pinterest:</h1>
-      <img src={peek} className={peekOut ? "photo-in" : "photo-out"} />
+      <img src={peek} className={peekOut ? "photo-in" : "photo-out"} alt="girl peeking out" />
       <div className="container-letter">
         <p className="letter-paragraph">
           For as long as I remember, Pinterest has been my favorite social media platform to use. While others flocked
@@ -46,24 +45,33 @@ function Letter() {
           and technology and I've always dreamed of working for a company who specializes in the intersection. This
           relationship is something that I feel is still severly underappreciated, but Pinterest has been way ahead of
           the game and I'd love to bring my own understanding and skillset to your company. I've been{" "}
-          <Tippy theme={"light"} content={<img className="tippy-image" style={{ width: "20em" }} src={watching} />}>
+          <Tippy
+            theme={"light"}
+            content={<img className="tippy-image" src={watching} alt="woman watching through binoculars" />}
+          >
             <button className="button-link">stalking</button>
           </Tippy>{" "}
           the careers page for a bit. When the New Grad position popped up on your Careers page, I've never clicked on
           something{" "}
-          <Tippy theme={"light"} content={<img className="tippy-image" style={{ width: "20em" }} src={breakWall} />}>
+          <Tippy
+            theme={"light"}
+            content={<img className="tippy-image" src={breakWall} alt="spongebob breaking through wall" />}
+          >
             <button className="button-link">faster</button>
           </Tippy>{" "}
           in my life. As far as what I bring to the{" "}
-          <Tippy theme={"light"} content={<img className="tippy-image" style={{ width: "20em" }} src={table} />}>
+          <Tippy
+            theme={"light"}
+            content={<img className="tippy-image" src={table} alt="man flipping chair to table" />}
+          >
             <button className="button-link">table</button>
           </Tippy>
           , Creative Technology & Design has provided me with a{" "}
-          <Tippy theme={"light"} content={<img className="tippy-image" style={{ width: "22em" }} src={multi} />}>
+          <Tippy theme={"light"} content={<img className="tippy-image" src={multi} alt="spongebob multitasking" />}>
             <button className="button-link">multitude</button>
           </Tippy>{" "}
           of skills to use at my disposal. However, what I specialize in is{" "}
-          <Tippy theme={"light"} content={<img className="tippy-image" style={{ width: "20em" }} src={css} />}>
+          <Tippy theme={"light"} content={<img className="tippy-image" src={css} alt="struggling with css" />}>
             <button className="button-link">front-end development.</button>
           </Tippy>
           Throughout personal studies, jobs, and school I've built multiple applications and websites in trusty React,
@@ -76,7 +84,10 @@ function Letter() {
           able to be work on that would truly put my skills to the test. Just as I've been inspired by some of the
           things I've seen on Pinterest, I'd love to be a part of a team who's constantly inspiring millions across the
           world. I'm{" "}
-          <Tippy theme={"light"} content={<img className="tippy-image" style={{ width: "20em" }} src={excited} />}>
+          <Tippy
+            theme={"light"}
+            content={<img className="tippy-image" src={excited} alt="patrick clapping his hands" />}
+          >
             <button className="button-link">excited</button>
           </Tippy>{" "}
           to see how you guys are going to grow in the future.
@@ -86,8 +97,8 @@ function Letter() {
           <br />
           Kaitlyn Huynh
         </p>
-        <a href = 'https://github.com/kaitlynh770/pcv'>
-            <img src = {github} className='github-image' />
+        <a href="https://github.com/kaitlynh770/pcv" target="_blank" rel="noopener noreferrer" >
+          <img src={github} className="github-image" alt="red github icon" />
         </a>
       </div>
     </div>
