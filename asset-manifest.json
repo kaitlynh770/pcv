@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/pcv/static/css/main.cf779b00.css",
+    "main.js": "/pcv/static/js/main.1f661e47.js",
+    "static/js/787.a6448f4b.chunk.js": "/pcv/static/js/787.a6448f4b.chunk.js",
+    "static/media/watching.gif": "/pcv/static/media/watching.0f8268c09f7f941c7b71.gif",
+    "static/media/spongebob-wall.gif": "/pcv/static/media/spongebob-wall.797734ce81146abfac8a.gif",
+    "static/media/table.gif": "/pcv/static/media/table.cebb4184258fe31e6008.gif",
+    "static/media/css.gif": "/pcv/static/media/css.f1952c88c0da80342d0e.gif",
+    "static/media/puzzle.gif": "/pcv/static/media/puzzle.b98c51ee3aaaae2dc0a8.gif",
+    "static/media/multi.gif": "/pcv/static/media/multi.ce5f4fe3437b5545742b.gif",
+    "static/media/patrick.gif": "/pcv/static/media/patrick.2e4d976d771c12b67ad4.gif",
+    "static/media/prof-image.png": "/pcv/static/media/prof-image.cb34b442d96cf61f62ea.png",
+    "static/media/peekaboo.gif": "/pcv/static/media/peekaboo.9c5f52fe0444bc143763.gif",
+    "static/media/flowers.gif": "/pcv/static/media/flowers.877f2192dbbd0e5510e7.gif",
+    "static/media/red-github.png": "/pcv/static/media/red-github.ce65477a1ba8adbcb2e1.png",
+    "index.html": "/pcv/index.html",
+    "main.cf779b00.css.map": "/pcv/static/css/main.cf779b00.css.map",
+    "main.1f661e47.js.map": "/pcv/static/js/main.1f661e47.js.map",
+    "787.a6448f4b.chunk.js.map": "/pcv/static/js/787.a6448f4b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf779b00.css",
+    "static/js/main.1f661e47.js"
+  ]
+}
