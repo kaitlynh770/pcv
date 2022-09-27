@@ -1,253 +1,243 @@
 @import url("https://use.typekit.net/tir8gnz.css");
-body{
-    overflow-x: hidden; 
-} 
-h1{
-    margin: 0.2em;
- }
- .container{
-    justify-content: 'center';
-    align-items: 'center';
-
-    .container-letter{
-        text-align: left;
-        margin: 3em 14em;
-    }
-
-    .container-cards{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
+body {
+  overflow-x: hidden;
 }
-.card-image{
-    height: 400px;
-    width: 200px;
-    border-radius: 10% 0% 0%;
-    align-content: center;
+h1 {
+  margin: 0.2em;
+}
+.container {
+  justify-content: "center";
+  align-items: "center";
+
+  .container-letter {
+    text-align: left;
+    margin: 3em 14em;
+  }
+
+  .container-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.card-image {
+  height: 400px;
+  width: 200px;
+  border-radius: 10% 0% 0%;
+  align-content: center;
 }
 .profile-image {
-    border-radius: 70%;
-    width: 240px;
+  border-radius: 70%;
+  width: 240px;
 }
 .profile-info {
-    margin: 0.5em;
-    font-size: 0.8em;
-    color: #767676;
-    margin-bottom: 3em;
+  margin: 0.5em;
+  font-size: 0.8em;
+  color: #767676;
+  margin-bottom: 3em;
 }
 .click-me {
-    box-sizing: border-box;
-    border-radius: 24px;
-    margin: 1em 0.4em;
-    font-weight: bold;
-    background-color: #efefef;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 100%;
-    border: none;
-    padding: 1em;
-    cursor: pointer;
-    color: black;
-    text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 24px;
+  margin: 1em 0.4em;
+  font-weight: bold;
+  background-color: #efefef;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans",
+    "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo,
+    "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 100%;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
 }
-.click-me:hover{
-    background-color: #d1d1d1;
+.click-me:hover {
+  background-color: #d1d1d1;
 }
 .change-view {
-    flex-direction: 'row';
-    justify-content: 'space-between';
-    align-items: center;
-    border: none;
-    font-weight: bold;
-    background-color: white;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    cursor: pointer;
-    margin: 1.5em;
-    font-size: 1.2em;
+  flex-direction: "row";
+  justify-content: "space-between";
+  align-items: center;
+  border: none;
+  font-weight: bold;
+  background-color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans",
+    "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo,
+    "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  cursor: pointer;
+  margin: 1.5em;
+  font-size: 1.2em;
 }
 .change-view-selected {
-    flex-direction: 'row';
-    justify-content: 'space-between';
-    margin: 2em;
-    font-weight: bold;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    cursor: pointer;
-    font-size: 1.2em;
-    background-color: white;
-    border-bottom-color: black;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom-width: 2;
-    border-bottom-left-radius: 4.5%;
-    border-bottom-right-radius: 4.5%;
+  flex-direction: "row";
+  justify-content: "space-between";
+  margin: 2em;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans",
+    "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo,
+    "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  cursor: pointer;
+  font-size: 1.2em;
+  background-color: white;
+  border-bottom-color: black;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom-width: 2;
+  border-bottom-left-radius: 4.5%;
+  border-bottom-right-radius: 4.5%;
 }
-.change-view + .change-view{
-    margin-left: 4em;
+.change-view + .change-view {
+  margin-left: 4em;
 }
-.title-header{
-    font-family: moret, serif;
-
-    font-weight: 400;
-    
-    font-style: normal;
+.title-header {
+  font-family: moret, serif;
+  font-weight: 400;
+  font-style: normal;
 }
-.letter-paragraph{
-    font-family: calmetta, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1.2em;
-    line-height: 1.6em;
-
+.letter-paragraph {
+  font-family: calmetta, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.2em;
+  line-height: 1.6em;
 }
-.letter-paragraph em{
-    font-family: calmetta, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 0.6em;
-    line-height: 1.7em;
-    display: inline;
+.letter-paragraph em {
+  font-family: calmetta, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.6em;
+  line-height: 1.7em;
+  display: inline;
 }
-.button-link{
-    font-family: calmetta, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1em;
-    border: none;
-    display: inline;
-    color: #F09090;
-    text-decoration: underline;
-    cursor: pointer;
-    background-color: white;
-    margin-left: -0.2em;
-    margin-right: -0.2em;
+.button-link {
+  font-family: calmetta, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1em;
+  border: none;
+  display: inline;
+  color: #f09090;
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: white;
+  margin-left: -0.2em;
+  margin-right: -0.2em;
 }
-.peekaboo{
-    position: absolute;
-    align-items: right;
-    right: 0px;
-
+.tippy-image {
+  align-content: center;
+  justify-content: center;
+  width: 10em;
+  padding: 1em;
+  overflow: hidden;
+  height: auto;
 }
-.peekaboo-hidden{
-    position: absolute;
-    right: 0px;
-    visibility: hidden;
-}
-.tippy-image{
-    align-content: center;
-    justify-content: center;
-    width: 10em;
-    padding: 1em;
-    overflow: hidden;
-    height:auto;
-}
-.card{
-    background-color:whitesmoke;
-    border-radius: 10%;
-    margin:2%;
-    box-sizing:border-box;
-    height: 550px;
-    width: fit-content;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+.card {
+  background-color: whitesmoke;
+  border-radius: 10%;
+  margin: 2%;
+  box-sizing: border-box;
+  height: 550px;
+  width: fit-content;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 .card-inner {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    border:none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border: none;
 }
 .card:hover .card-inner {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
-.card-front, .card-back {
-    border: none;
-    margin:2%;
-    background-color:whitesmoke;
-    border-radius: 10%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
+.card-front,
+.card-back {
+  border: none;
+  margin: 2%;
+  background-color: whitesmoke;
+  border-radius: 10%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
 }
 .card-front {
-    background-color: whitesmoke;
-    border: none;
+  background-color: whitesmoke;
+  border: none;
 }
-.card-back{
-    background-color: whitesmoke;
-    transform: (rotateY(180deg));
-    border-radius: 10%;
-    margin: 2em;
-    box-sizing:border-box;
-    margin-top: -100%;
-    width: 350px;
-    align-items: flex-start;
-
+.card-back {
+  background-color: whitesmoke;
+  transform: (rotateY(180deg));
+  border-radius: 10%;
+  margin: 2em;
+  box-sizing: border-box;
+  margin-top: -100%;
+  width: 350px;
+  align-items: flex-start;
 }
-.profile-image-card{
-    border-radius: 70%;
-    width: 50px;
-    align-self: left;
-    margin-left: -50%;
+.profile-image-card {
+  border-radius: 70%;
+  width: 50px;
+  align-self: left;
+  margin-left: -50%;
 }
-.text-for-card{
-    font-family: moret, serif;
-
-    font-weight: 400;
-    
-    font-style: normal;
-
-    font-size: 1.5em;
+.text-for-card {
+  font-family: moret, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
 }
 .text-next-to-photo {
-    font-family: calmetta, sans-serif;
-
-    font-weight: 300;
-    
-    font-style: normal;
-
-    font-size: 0.8em;
-    position: relative;
-    bottom: 20px;
-
-    text-align: left;
-    display: inline;
-    margin-left: 1em;
+  font-family: calmetta, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.8em;
+  position: relative;
+  bottom: 20px;
+  text-align: left;
+  display: inline;
+  margin-left: 1em;
 }
-.text-explanation{
-    font-family: calmetta, sans-serif;
-
-    font-weight: 300;
-    
-    font-style: normal;
-
-    font-size: 1.2em;
-    text-align: left;
+.text-explanation {
+  font-family: calmetta, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.2em;
+  text-align: left;
 }
-  
+.photo-in {
+  right: 0px;
+  position: absolute;
+  animation: slide-in-right 4800ms ease-in-out;
+}
+.photo-out {
+  right: -350px;
+  position: absolute;
+}
 @keyframes slide-in-right {
-    0% {
-        right: -700px;
-    }
+  0% {
+    right: -700px;
+  }
 
-    15% {
-        right: 0rem;
-    }
+  15% {
+    right: 0rem;
+  }
 
-    85% {
-        right: 0rem;
-    }
+  85% {
+    right: 0rem;
+  }
 
-    100% {
-        right: -700px;
-    }
+  100% {
+    right: -700px;
+  }
 }
 .slide-in-right {
-    position: fixed;
-    right: -700px;
-    top: 50%;
-    transform: translateY(-50%);
-    &.active {
-        animation: slide-in-right 4500ms ease-in-out;
-    }
+  position: fixed;
+  right: -700px;
+  top: 50%;
+  transform: translateY(-50%);
+  &.active {
+    animation: slide-in-right 4500ms ease-in-out;
+  }
 }
