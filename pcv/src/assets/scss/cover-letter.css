@@ -1,0 +1,332 @@
+@charset "UTF-8";
+@import url("https://use.typekit.net/tir8gnz.css");
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 0.2em;
+}
+
+.container {
+  -webkit-box-pack: "center";
+      -ms-flex-pack: "center";
+          justify-content: "center";
+  -webkit-box-align: "center";
+      -ms-flex-align: "center";
+          align-items: "center";
+}
+
+.container .container-letter {
+  text-align: left;
+  margin: 3em 14em;
+}
+
+.container .container-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-image {
+  height: 28vw;
+  width: 24.56vw;
+  border-radius: 10% 0% 0%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.profile-image {
+  border-radius: 70%;
+  width: 240px;
+}
+
+.profile-info {
+  margin: 0.5em;
+  font-size: 0.8em;
+  color: #767676;
+  margin-bottom: 3em;
+}
+
+.click-me {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 24px;
+  margin: 1em 0.4em;
+  font-weight: bold;
+  background-color: #efefef;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 100%;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+.click-me:hover {
+  background-color: #d1d1d1;
+}
+
+.change-view {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: "row";
+          flex-direction: "row";
+  -webkit-box-pack: "space-between";
+      -ms-flex-pack: "space-between";
+          justify-content: "space-between";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  font-weight: bold;
+  background-color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  cursor: pointer;
+  margin: 1.5em;
+  font-size: 1.2em;
+}
+
+.change-view-selected {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: "row";
+          flex-direction: "row";
+  -webkit-box-pack: "space-between";
+      -ms-flex-pack: "space-between";
+          justify-content: "space-between";
+  margin: 2em;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  cursor: pointer;
+  font-size: 1.2em;
+  background-color: white;
+  border-bottom-color: black;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom-width: 2;
+  border-bottom-left-radius: 4.5%;
+  border-bottom-right-radius: 4.5%;
+}
+
+.change-view + .change-view {
+  margin-left: 4em;
+}
+
+.title-header {
+  font-family: moret, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.letter-paragraph {
+  font-family: calmetta, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+.letter-paragraph em {
+  font-family: calmetta, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.6em;
+  line-height: 1.7em;
+  display: inline;
+}
+
+.button-link {
+  font-family: calmetta, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1em;
+  border: none;
+  display: inline;
+  color: #E60023;
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: white;
+  margin-left: -0.2em;
+  margin-right: -0.2em;
+}
+
+.tippy-image {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 10em;
+  padding: 1em;
+  overflow: hidden;
+  height: auto;
+  width: 20em;
+}
+
+.github-image {
+  margin-top: none;
+  width: 1.5em;
+}
+
+.card {
+  background-color: whitesmoke;
+  border-radius: 10%;
+  margin: 2%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 38.6vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  border: none;
+}
+
+.card:hover .card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  border: none;
+  margin: 2%;
+  background-color: whitesmoke;
+  border-radius: 10%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: whitesmoke;
+  border: none;
+}
+
+.card-back {
+  background-color: whitesmoke;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  border-radius: 10%;
+  margin: 2vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: -110%;
+  width: 24.56vw;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.profile-image-card {
+  border-radius: 70%;
+  width: 3.5vw;
+  -ms-flex-item-align: left;
+      -ms-grid-row-align: left;
+      align-self: left;
+  margin-left: -50%;
+}
+
+.text-for-card {
+  font-family: moret, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
+}
+
+.text-next-to-photo {
+  font-family: calmetta, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.8em;
+  position: relative;
+  bottom: 1.4vw;
+  text-align: left;
+  display: inline;
+  margin-left: 1em;
+}
+
+.text-explanation {
+  font-family: calmetta, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.4vw;
+  text-align: left;
+}
+
+.photo-in {
+  right: 0px;
+  position: absolute;
+  -webkit-animation: slide-in-right 4800ms ease-in-out;
+          animation: slide-in-right 4800ms ease-in-out;
+}
+
+.photo-out {
+  right: -350px;
+  position: absolute;
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    right: -700px;
+  }
+  15% {
+    right: 0rem;
+  }
+  85% {
+    right: 0rem;
+  }
+  100% {
+    right: -700px;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    right: -700px;
+  }
+  15% {
+    right: 0rem;
+  }
+  85% {
+    right: 0rem;
+  }
+  100% {
+    right: -700px;
+  }
+}
+
+.slide-in-right {
+  position: fixed;
+  right: -700px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.slide-in-right.active {
+  -webkit-animation: slide-in-right 4500ms ease-in-out;
+          animation: slide-in-right 4500ms ease-in-out;
+}
+/*# sourceMappingURL=cover-letter.css.map */
