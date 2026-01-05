@@ -8,6 +8,9 @@ import css from "./assets/images/css.gif";
 import multi from "./assets/images/multi.gif";
 import excited from "./assets/images/patrick.gif";
 import github from "./assets/images/red-github.png";
+import hat from './assets/images/hat.gif';
+import creative from './assets/images/creative_bran.gif';
+import technology from './assets/images/we_have_technology.gif';
 import * as React from "react";
 import Tippy from "@tippy.js/react";
 import "tippy.js/dist/tippy.css";
@@ -41,8 +44,24 @@ function Letter() {
         </p>
         <p className="letter-paragraph">
           Let me talk about my background really quickly. During my time earning a B.S in Creative Technology & Design
-          from University of Colorado Boulder, I've learned to love and appreciate the intersection between creativity
-          and technology and I've always dreamed of working for a company who specializes in the intersection. This
+          from University of Colorado Boulder, I've learned to love and appreciate the intersection between{" "}
+          <Tippy
+            theme = {"light"}
+            content = {<img className = "tippy-image" src = {creative} alt = "creative bran" />}
+          >
+            <button className = "button-link">creativity</button>
+          </Tippy> {" "}
+          and {" "}
+          <Tippy 
+            theme = {"light"} 
+            content = {
+            <img className = "tippy-image" 
+              src = {technology} 
+              alt = "we aren't cavemen, we have technology" />}
+            > 
+              <button className = "button-link">technology</button>
+          </Tippy>{" "} 
+          and I've always dreamed of working for a company who specializes in the intersection. This
           relationship is something that I feel is still severly underappreciated, but Pinterest has been way ahead of
           the game and I'd love to bring my own understanding and skillset to your company. I've been{" "}
           <Tippy
@@ -51,7 +70,7 @@ function Letter() {
           >
             <button className="button-link">stalking</button>
           </Tippy>{" "}
-          the careers page for a bit. When the New Grad position popped up on your Careers page, I've never clicked on
+          the careers page for a bit. When the SWE Web Position popped up on your Careers page, I've never clicked on
           something{" "}
           <Tippy
             theme={"light"}
@@ -74,10 +93,17 @@ function Letter() {
           <Tippy theme={"light"} content={<img className="tippy-image" src={css} alt="struggling with css" />}>
             <button className="button-link">front-end development.</button>
           </Tippy>
-          Throughout personal studies, jobs, and school I've built multiple applications and websites in trusty React,
-          gone back to my roots with good old HTML/CSS/Javascript and created mobile apps from the ground up in Xcode
-          and Android Studio. But if there's anything that my major has given me throughout the 4 years, it's the
-          ability to adjust to new environments and learn new skills on the fly.
+          Throughout my studies and professional experience, I’ve built and shipped applications across the stack—from 
+          developing web apps in React and working directly with HTML, CSS, and JavaScript, to building mobile applications 
+          from the ground up in Xcode and Android Studio. In my current role as a full-stack developer, I’ve contributed to 
+          multiple projects wearing different {" "}
+          <Tippy theme = {"light"} content = {<img className = "tippy-image" src = {hat} alt = "you deserve each other this hat and you" />}>
+            <button className = "button-link">hats</button>
+          </Tippy>
+          including PMO and data analytics, and most recently helped develop the UI for an AI chatbot used in a government-facing application. 
+          These experiences have strengthened my ability to quickly adapt to new environments, learn unfamiliar technologies on the fly, 
+          and contribute meaningfully to complex projects. I’m excited to bring this versatility and problem-solving mindset to a collaborative 
+          team where I can continue growing as an engineer.
         </p>
         <p className="letter-paragraph">
           Pinterest is a company that continues to exceed expectations and improve on their product each day, and being
