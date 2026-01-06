@@ -99,7 +99,7 @@ function Letter() {
           multiple projects wearing different {" "}
           <Tippy theme = {"light"} content = {<img className = "tippy-image" src = {hat} alt = "you deserve each other this hat and you" />}>
             <button className = "button-link">hats</button>
-          </Tippy>
+          </Tippy>{" "}
           including PMO and data analytics, and most recently helped develop the UI for an AI chatbot used in a government-facing application. 
           These experiences have strengthened my ability to quickly adapt to new environments, learn unfamiliar technologies on the fly, 
           and contribute meaningfully to complex projects. I’m excited to bring this versatility and problem-solving mindset to a collaborative 
